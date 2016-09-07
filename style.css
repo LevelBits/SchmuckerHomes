@@ -103,6 +103,7 @@ header .main-logo {
 .slide-4 {
   width: 100%;
   position: absolute;
+  background-size: cover;
 }
 
 .slide-1 {
