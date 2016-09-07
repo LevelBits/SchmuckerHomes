@@ -1,0 +1,359 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin: 0;
+  color: #84878A;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #84878A;
+}
+
+.row {
+  max-width: 940px;
+  margin: auto;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header {
+  margin-top: 10px;
+}
+
+header a {
+  color: #84878A;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+
+header a.active {
+  color: #8DC84E;
+  font-weight: 600;
+}
+
+header .header-content .right {
+  position: absolute;
+  right: 40px;
+}
+
+header .header-content p {
+  margin: 0;
+  position: absolute;
+  left: 40px;
+}
+
+header .header-content a,
+.social .icons a {
+  margin: 0 2px 0 2px;
+  transition: 0.5s;
+}
+
+header .header-content a:hover,
+.social .icons a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+header .main-logo {
+  padding-bottom: 20px;
+}
+
+.menu {
+  padding: 20px 0;
+}
+
+.slider {
+  height: 380px;
+}
+
+.slider > div {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
+.slider > div.active {
+  opacity: 1;
+}
+
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4 {
+  width: 100%;
+  position: absolute;
+}
+
+.slide-1 {
+  background-image: url(images/exterior-design-slide.png);
+}
+
+.slide-2 {
+  background-image: url(images/interior-design.jpg);
+}
+
+.slide-3 {
+  background-image: url(images/remodel.jpg);
+}
+
+.slide-4 {
+  background-image: url(images/construction.jpg);
+}
+
+.slider .row {
+  height: 380px;
+}
+
+.services {
+  background-color: #F9F9F9;
+  padding: 40px 0;
+}
+
+.services p {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.services .icon-wrapper {
+  cursor: pointer;
+}
+
+.services .icon-wrapper.active {
+  color: #8DC84E;
+}
+
+.exterior, .interior, .remodel, .construction {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.exterior {
+  background-image: url(images/exterior-icon@2x.png);
+}
+
+.active .exterior {
+  background-image: url(images/exterior-icon-active@2x.png);
+}
+
+.interior {
+  background-image: url(images/interior-icon@2x.png);
+}
+
+.active .interior {
+  background-image: url(images/interior-icon-active@2x.png);
+}
+
+.remodel {
+  background-image: url(images/remodel-icon@2x.png);
+}
+
+.active .remodel {
+  background-image: url(images/remodel-icon-active@2x.png);
+}
+
+.construction {
+  background-image: url(images/construction-icon@2x.png);
+}
+
+.active .construction {
+  background-image: url(images/construction-icon-active@2x.png);
+}
+
+.gallery {
+  padding: 40px 0;
+}
+
+.gallery .img {
+  width: 100%;
+  height: 458px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.gallery .img.half {
+  height: 221px;
+  margin-bottom: 1rem;
+}
+
+.gallery .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
+.gallery .img:hover .overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, .6);
+    transition: 0.5s;
+}
+
+.gallery .img .overlay .row {
+  height: 100%;
+}
+
+.gallery .img .overlay span {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  transition: 0.5s;
+  display: block;
+}
+
+.gallery .img .overlay a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.btn {
+  font-size: 16px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 4px;
+  padding: 9px 35px;
+  cursor: pointer;
+}
+
+.btn.see-more {
+  color: #84878A;
+  border: 2px solid #84878A;
+  transition: 0.5s;
+}
+
+.btn.see-more:hover {
+  color: #FFFFFF;
+  background-color: #84878A;
+  transition: 0.5s;
+}
+
+.btn.contact {
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  padding: 5px 35px;
+  transition: 0.5s;
+}
+
+.btn.contact:hover {
+  color: #8DC84E;
+  background-color: #FFFFFF;
+  transition: 0.5s;
+}
+
+.suppliers {
+  padding: 40px 0;
+  background-color: #F9F9F9;
+}
+
+.suppliers .logos {
+  padding: 20px 0;
+}
+
+.suppliers p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contact-bar {
+  padding: 15px 0;
+  background-color: #8DC84E;
+}
+
+.contact-bar p {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.contact-bar .btn.contact {
+  margin-left: 20px;
+}
+
+.social {
+  padding: 40px 0;
+  background-color: #5B5E61;
+}
+
+.social .icons {
+  margin-top: 10px;
+}
+
+footer {
+  color: #5B5E61;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #3F4245;
+}
+
+/* Media Queries */
+
+@media (max-width: 498px) {
+  .btn.contact {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  header .header-content p {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  header .header-content p {
+    left: 0;
+  }
+
+  header .header-content .right {
+    right: 30px;
+  }
+
+  h1 {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .icon-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .gallery .img {
+    height: 221px;
+    margin-bottom: 1rem;
+  }
+}
