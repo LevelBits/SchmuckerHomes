@@ -107,19 +107,19 @@ header .main-logo {
 }
 
 .slide-1 {
-  background-image: url(images/exterior-design-slide.png);
+  background-image: url(images/exterior-slide.png);
 }
 
 .slide-2 {
-  background-image: url(images/interior-design.jpg);
+  background-image: url(images/interior-slide.jpg);
 }
 
 .slide-3 {
-  background-image: url(images/remodel.jpg);
+  background-image: url(images/remodel-slide.jpg);
 }
 
 .slide-4 {
-  background-image: url(images/construction.jpg);
+  background-image: url(images/construction-slide.jpg);
 }
 
 .slider .row {
